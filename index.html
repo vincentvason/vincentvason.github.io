@@ -14,12 +14,14 @@
 	<!-- Custom Styles -->
 	<link href="css/slides-custom.css" rel="stylesheet" type="text/css">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/flickity.css" rel="stylesheet" type="text/css">
   
 	<!-- jQuery 3.3.1 -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 
 	<!-- Compressed Scripts -->
-	<script src="js/slides.min.js" type="text/javascript"></script>
+	<script src="js/flickity.pkgd.min.js" type="text/javascript"></script>
+  <script src="js/slides.min.js" type="text/javascript"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 	<!-- Custom Scripts -->
@@ -81,10 +83,13 @@
 <!-- Panel Top #05 -->
 <nav class="panel top navbar-fixed-top" style="background-image: linear-gradient(rgba(0,0,0,0.9),rgb(0,0,0,0.9),rgb(0,0,0,0.9),rgb(0,0,0,0.9),rgb(0,0,0,0.9),transparent);" id="nav">
   <div class="sections desktop">
-    <div class="left"><a class="button blue gradient" href="#aboutme">My Profile</a></div>
+    <div class="left">
+      <a class="button blue gradient" href="#aboutme">My Profile</a>
+      <a class="button blue gradient" href="https://drive.google.com/file/d/1-rUpVLW1nv4KhBThh6_N9RpqyTZMm0pU/view?usp=share_link">CV</a>
+    </div>
     <div class="center">
       <ul style="font-family:acumin-pro-wide;">
-        <a href="#work"><b>My Works and Projects</b></a>
+        <b>My Works and Projects</b>
       </ul>
       <ul class="menu">
         <li><b><a href="#ssss">SSSS</a></b></li>
@@ -115,7 +120,8 @@
    <!-- <a href="#" class="logo"><svg width="37" height="30"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo-icon"></use></svg></a> -->
     <ul class="mainMenu margin-top-3">
       <li><a href="#aboutme"><span style="color: #64b5f6"> My Profile </span></a></li>
-      <li><a href="#work"><span style="color: #64b5f6"> My Work and Projects </span></a></li>
+      <li><a href="https://drive.google.com/file/d/1-rUpVLW1nv4KhBThh6_N9RpqyTZMm0pU/view?usp=share_link"><span style="color: #64b5f6"> CV </span></a></li>
+      <li><span> My Work and Projects </span></a></li>
     </ul>
     <ul class="subMenu small opacity-8">
       <li><a href="#ssss">Split Screen Side Scrolling</a></li>
@@ -138,153 +144,104 @@
     <div class="container">
       <div class="wrap">
       
-        <div class="fix-12-12">
+        <div class="col-12-12">
           <ul class="flex fixedSpaces verticalCenter">
             <li class="col-12-12 left middle">
               <h1 class="ae-1 fromLeft" style="font-family:acumin-pro-wide;"><b>Vason Maitree</b></h1>
-              <p class="ae-2 fromLeft"><span class="opacity-8">I'm a graduate of computer engineering and currently studying for a Master's Degree in Commercial Games Development at UWE.</p>
-              <p class="ae-3 fromLeft"><span class="opacity-8"><b>I dream of becoming a <b style="font-family:acumin-pro-wide; background-color: yellow; color:black;" >Game & User Experience Designer</b> as I admire to connect the knowledge of the relationship between coding, designing, gaming and bringing a smooth experience to players.</b></p>
-            </li>
-            <li class="col-12-12 left middle">
-              <a class="ae-3 fromLeft button blue gradient" href="https://drive.google.com/file/d/1-rUpVLW1nv4KhBThh6_N9RpqyTZMm0pU/view?usp=sharing">My CV</a>
-              <a class="ae-3 fromLeft button blue gradient" href="#work">My Works & Projects</a>
-            </li>
-          </ul>
-        </div>
-
-        
-        <div class="fix-12-12">
-          <ul class="flex fixedSpaces">
-            <li class="col-4-12 left top">
-              <div class="card card-body bg-transparent border-light ae-4 fromLeft">
-                <h3 style="font-family:acumin-pro-wide;"><b>Coding Skill</b></h1>
-                  <ul style="font-size: 3rem; color: white;">
-                    <b style="font-family:acumin-pro-wide;">Can Do:</b>
-                    <li>• <b>Application Programming:</b> C, C++, C#</li>
-                    <li>• <b>Web Programming:</b> HTML5, PHP, MySQL</li>
-                    <li>• <b>Unity:</b> 2D/3D, UI Canvas</li>
-                    <li>• <b>Unreal:</b> Blueprint, UI UMG Widget</li>
-                  </ul>
-              </div>
-            </li>
-            <li class="col-4-12 left top">
-              <div class="card card-body bg-transparent border-light ae-4 fromLeft">
-                <h3 style="font-family:acumin-pro-wide;"><b>Designing Skill</b></h1>
-                  <ul style="font-size: 3rem; color: white;">
-                    <b style="font-family:acumin-pro-wide;">Can Do:</b>
-                    <li>• <b>UI and Character Artist:</b> Adobe Photoshop and Illustrator</li>
-                    <li>• <b>UX Design:</b> Adobe XD, Figma</li>
-                    <li>• <b>Game Design:</b> Spreadsheet, Document</li>
-                  </ul>
-              </div>
-            </li>
-            <li class="col-4-12 left top">
-              <div class="card card-body bg-transparent border-light ae-4 fromLeft">
-                <h3 style="font-family:acumin-pro-wide;"><b>Project Management Skill</b></h1>
-                <ul style="font-size: 3rem;">
-                  <li>• <b>Version Control:</b> Git Bash, Github Desktop</li>
-                  <li>• <b>Project Management Software:</b> Trello, Slack</li>
-                </ul>
-              </div>
+              <p class="ae-2 fromLeft"><span class="opacity-8">I'm graduated B.Eng. Computer Engineering and currently study MSc Commerical Games Development at UWE.</p>
+              <p class="ae-2 fromLeft"><span class="opacity-8">I would like to be a game designer as I love to bring the player experience to the best. I am specialize in UI/UX design but also interested several areas in game systems such as design mechanics, game balance using spreadsheet and create documents.</p>
+              <p class="ae-2 fromLeft"><span class="opacity-8">This is a showcase of game development work I have done, either for University submissions, or as personal projects.</p>
             </li>
           </ul>
         </div>
         
-      </div>
-    </div>
-  </div>
-  <div class="background" style="background-image:url(assets/img/background/img-1.png)"></div>
-</section>
-
-<!-- Slide 1 (#1) -->
-<section class="slide fade-6 kenBurns " id="work">
-  <div class="content">
-    <div class="container">
-      <div class="wrap">
-      
-        <div class="fix-12-12">
-          <ul class="flex fixedSpaces verticalCenter reverse">
-            <li class="col-12-12 center middle">
-              <h1 class="ae-1 fromLeft" style="font-family:acumin-pro-wide;"><b>My Works and Projects</b></h1>
-            </li>
-          </ul>
-        </div>
-
-        
-        <div class="fix-12-12">
-          <ul class="flex fixedSpaces">
-            <li class="ae-2 fromLeft col-4-12 left top">
-              <a href="#ssss">
-                <div class="card bg-transparent border-light">
-                  <img src="assets/img/background/img-34.jpg" class="card-img-top" alt="...">
-                  <div class="card-body bg-transparent border-light">
-                    <h3 class="card-title" style="font-family:acumin-pro-wide;"><b>Split Screen Side Scrolling</b></h3>
-                    <p style="font-size: 3rem;">The infinity running game can play with one hand.</p>
+        <div class="col-12-12">
+          <div class="flex fixedSpaces verticalCenter">
+            <div class="col-2-12"></div>
+            <div class="col-8-12 ae-3 fromLeft">
+              <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel-cell">
+                  <!-- Page 1 -->
+                  <div class="col-12-12">
+                    <img src="assets/img/background/img-34.jpg" style="width:50em" alt="grapes" />
+                  </div>
+                  <div class="col-12-12 left middle" style="padding-left:20rem; padding-right:20rem;">
+                    <h3 style="font-family:acumin-pro-wide;"><b>Split Screen Side Scrolling (SSSS)</b></h1>
+                    <p style="font-size: 3rem;"><span class="opacity-8">[UI/UX] The infinity running game can play with one hand.</span></p>
+                  </div>
+                  <div class="col-12-12">
+                    <a class="button blue gradient cropLeft" href="#ssss">See More</a>
                   </div>
                 </div>
-              </a>
-            </li>
-            <li class="ae-2 fromLeft col-4-12 left top">
-              <a href="torsi">
-                <div class="card bg-transparent border-light">
-                  <img src="assets/img/background/img-60.jpg" class="card-img-top" alt="...">
-                  <div class="card-body bg-transparent border-light">
-                    <h3 class="card-title" style="font-family:acumin-pro-wide;"><b>TORSI</b></h3>
-                    <p style="font-size: 3rem;">This short and sweet multitasking game.</p>
+                <div class="carousel-cell">
+                  <!-- Page 2 -->
+                  <div class="col-6-12">
+                    <img src="assets/img/background/img-60.jpg" style="width:50em" alt="grapes" />
+                  </div>
+                  <div class="col-6-12 left middle" style="padding-left:20rem; padding-right:20rem;">
+                    <h3 style="font-family:acumin-pro-wide;"><b>TORSI</b></h1>
+                    <p  style="font-size: 3rem;"><span class="opacity-8">[UI/UX] This short and sweet multitasking game.</span></p>
+                  </div>
+                  <div class="col-12-12">
+                    <a class="button blue gradient cropLeft" href="#torsi">See More</a>
                   </div>
                 </div>
-              </a>
-            </li>
-            <li class="ae-2 fromLeft col-4-12 left top">
-              <a href="#loc">
-                <div class="card bg-transparent border-light">
-                  <img src="assets/img/background/img-92.png" class="card-img-top" alt="...">
-                  <div class="card-body bg-transparent border-light">
-                    <h3 class="card-title" style="font-family:acumin-pro-wide;"><b>Labyrinth of Chroma</b></h3>
-                    <p style="font-size: 3rem;">A shooter game where Match 3 meets Bullet Hell.</p>
+                <div class="carousel-cell">
+                  <!-- Page 3 -->
+                  <div class="col-6-12">
+                    <img src="assets/img/background/img-92.png" style="width:50em" alt="grapes" />
+                  </div>
+                  <div class="col-6-12 left middle" style="padding-left:20rem; padding-right:20rem;">
+                    <h3  style="font-family:acumin-pro-wide;"><b>Labyrinth of Chroma</b></h1>
+                    <p  style="font-size: 3rem;"><span class="opacity-8">[Personal Project] A shooter game where Match 3 meets Bullet Hell.</span></p>
+                  </div>
+                  <div class="col-12-12">
+                    <a class="button blue gradient cropLeft" href="#loc">See More</a>
                   </div>
                 </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="fix-12-12">
-          <ul class="flex fixedSpaces">
-            <li class="ae-2 fromLeft col-4-12 left top">
-              <a href="#tap">
-                <div class="card bg-transparent border-light">
-                  <img src="assets/img/background/img-99.jpg" class="card-img-top" alt="...">
-                  <div class="card-body bg-transparent border-light">
-                    <h3 class="card-title" style="font-family:acumin-pro-wide;"><b>Root of Yggdrasil</b></h3>
-                    <p style="font-size: 3rem;">[Game Jam 2023] This is not a typical defense game. Expand your turf by growing roots!</p>
+                <div class="carousel-cell">
+                  <!-- Page 4 -->
+                  <div class="col-6-12">
+                    <img src="assets/img/background/img-99.jpg" style="width:50em" alt="grapes" />
+                  </div>
+                  <div class="col-6-12 left middle" style="padding-left:20rem; padding-right:20rem;">
+                    <h3 style="font-family:acumin-pro-wide;"><b>Root of Yggdrasil</b></h1>
+                    <p  style="font-size: 3rem;"><span class="opacity-8">[UI/UX] This is not a typical defense game. Expand your turf by growing roots!</span></p>
+                  </div>
+                  <div class="col-12-12">
+                    <a class="button blue gradient cropLeft" href="#roots">See More</a>
                   </div>
                 </div>
-              </a>
-            </li>
-            <li class="ae-2 fromLeft col-4-12 left top">
-              <a href="#tap">
-                <div class="card bg-transparent border-light">
-                  <img src="assets/img/background/img-95.png" class="card-img-top" alt="...">
-                  <div class="card-body bg-transparent border-light">
-                    <h3 class="card-title" style="font-family:acumin-pro-wide;"><b>TAP-SWOT in a box</b></h3>
-                    <p style="font-size: 3rem;">[University Work] A cooperate party games about sales pitching.</p>
+                <div class="carousel-cell">
+                  <!-- Page 5 -->
+                  <div class="col-6-12">
+                    <img src="assets/img/background/img-95.png" style="width:50em" alt="grapes" />
+                  </div>
+                  <div class="col-6-12 left middle" style="padding-left:20rem; padding-right:20rem;">
+                    <h3  style="font-family:acumin-pro-wide;"><b>TAP-SWOT in a box</b></h1>
+                    <p  style="font-size: 3rem;"><span class="opacity-8">[UI/UX] A cooperate party games about sales pitching.</span></p>
+                  </div>
+                  <div class="col-12-12">
+                    <a class="button blue gradient cropLeft" href="#tap">See More</a>
                   </div>
                 </div>
-              </a>
-            </li>
-            <li class="ae-2 fromLeft col-4-12 left top">
-              <a href="#tot">
-                <div class="card bg-transparent border-light">
-                  <img src="assets/img/background/img-97.png" class="card-img-top" alt="...">
-                  <div class="card-body bg-transparent border-light">
-                    <h3 class="card-title" style="font-family:acumin-pro-wide;"><b>Temporal Tenacity (WIP)</b></h3>
-                    <p style="font-size: 3rem;">[University Work] A point-and-click strategy game where people can travel accross the time.</p>
+                <div class="carousel-cell">
+                  <!-- Page 6 -->
+                  <div class="col-6-12">
+                    <img src="assets/img/background/img-97.png" style="width:50em" alt="grapes" />
+                  </div>
+                  <div class="col-6-12 left middle" style="padding-left:20rem; padding-right:20rem;">
+                    <h3  style="font-family:acumin-pro-wide;"><b>Temporal Tenacity (WIP)</b></h1>
+                    <p  style="font-size: 3rem;"><span class="opacity-8">[UI/UX] A point-and-click strategy game where your crews can travel accross the time.</span></p>
+                  </div>
+                  <div class="col-12-12">
+                    <a class="button blue gradient cropLeft" href="#tot">See More</a>
                   </div>
                 </div>
-              </a>
-            </li>
-          </ul>
+              </div>
+            </div>
+           
+          </div>
         </div>
         
       </div>
@@ -623,6 +580,64 @@
   </div>
   <div class="background" style="background-image:url(assets/img/background/img-98.jpg)"></div>
 </section>
+
+<!-- Slide 8 (#1) -->
+<!-- <section class="slide fade-6 kenBurns" id="cv">
+  <div class="content">
+    <div class="container">
+      <div class="wrap">
+      
+        <div class="col-12-12">
+          <ul class="flex fixedSpaces verticalCenter">
+            <li class="col-12-12 left middle">
+              <h1 class="ae-1 fromLeft" style="font-family:acumin-pro-wide;"><b>Vason Maitree</b></h1>
+              <p class="ae-2 fromLeft"><span class="opacity-8">
+                I am currently pursuing a master's degree in commercial game development at the 
+                University of the West of England in Bristol eager to become a game designer.
+                My speciality is UI/UX design but I also interested to various areas of game designer such as
+                design mechanics, game balance using spreadsheet and create documents.
+              </p>
+              <p class="ae-2 fromLeft">
+                From the time I was at university to the most recent Game Jam, I also have been primarily 
+                responsible for user interface and use experience design, collaborating with my colleagues 
+                on the direction of games, including the card game project which is collaborated with a
+                university and a stakeholder from Triple Access Planning for Uncertain Futures..
+              </p>
+              <p class="ae-2 fromLeft">
+                I am determined to use my skills and experience in this position without reserve, and I am 
+                passionate about learning everything from your studio.
+              </p>
+
+              <h3 class="ae-1 fromLeft" style="font-family:acumin-pro-wide;"><b>Techincal Skills</b></h1>
+                <h3 class="ae-1 fromLeft" style="font-family:acumin-pro-wide;"><b>Techincal Skills</b></h1>
+                <p class="ae-2 fromLeft"><span class="opacity-8">
+                  I am currently pursuing a master's degree in commercial game development at the 
+                  University of the West of England in Bristol eager to become a game designer.
+                  My speciality is UI/UX design but I also interested to various areas of game designer such as
+                  design mechanics, game balance using spreadsheet and create documents.
+                </p>
+                <p class="ae-2 fromLeft">
+                  From the time I was at university to the most recent Game Jam, I also have been primarily 
+                  responsible for user interface and use experience design, collaborating with my colleagues 
+                  on the direction of games, including the card game project which is collaborated with a
+                  university and a stakeholder from Triple Access Planning for Uncertain Futures..
+                </p>
+                <p class="ae-2 fromLeft">
+                  I am determined to use my skills and experience in this position without reserve, and I am 
+                  passionate about learning everything from your studio.
+                </p>
+            </li>
+          </ul>
+        </div>
+           
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="background" style="background-image:url(assets/img/background/img-1.png)"></div>
+</section> -->
 
 <!-- Loading Progress Bar -->
 <div class="progress-bar blue"></div>

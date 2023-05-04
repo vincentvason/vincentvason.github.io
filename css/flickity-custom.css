@@ -1,0 +1,93 @@
+.ux-carousel {
+    position: relative;
+    max-width: 1110px;
+    margin: 0px auto 50px;
+  }
+  .carousel-cell {
+    width: 100%; /* full width */
+    height: auto; /* height of carousel */
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .carousel.is-fullscreen .carousel-cell {
+    height: 100%;
+  }
+  .carousel-cell-image {
+    display: block;
+    max-height: 100%;
+  }
+  .carousel.is-fullscreen .carousel-cell-image {
+    max-width: 80%;
+  }
+  .flickity-prev-next-button {
+      top: 50%;
+      width: 34px !important;
+      height: 34px !important;
+      border-radius: 50%;
+      transform: translateY(-50%);
+  }
+  .flickity-button {
+      background-color: rgba(0, 0, 0, 0.20) !important;
+  }
+  .flickity-button:hover {
+      background-color: rgba(0, 0, 0, 0.50) !important;
+  }
+  .flickity-button-icon {
+      fill: #fff !important;
+   }
+   .flickity-prev-next-button .flickity-button-icon {
+      position: absolute;
+      left: 32% !important;
+      top: 29% !important;
+      width: 34% !important;
+      height: 40% !important;
+  }
+  .flickity-page-dots .dot {
+      display: none !important;
+      width: 6px !important;
+      height: 6px !important;
+      margin: 0 5px !important;
+      background: #333;
+      border-radius: 50%;
+      opacity: 0.25;
+      cursor: pointer;
+  }
+  .carousel-counter {
+      padding: 0px 0px 0px 0px;
+      font-weight:bold;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom:20px;
+      margin: auto;
+      background: rgba(0,0,0,0.2);
+      width:50px;
+      height:26px;
+      border-radius:23px;
+  } 
+  .carousel-status {
+      margin: 5px 0px 0px 1px;
+      width: 100%;
+      letter-spacing:2px;
+      color:white;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 600;
+  }
+  .carousel-caption {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%
+  }
+  .caption {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    background: red;
+  }
